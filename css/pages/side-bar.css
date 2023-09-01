@@ -1,0 +1,123 @@
+:root {
+    --side-bar-width: 300px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /* list-style-type: none; */
+}
+
+img {
+	display: block;
+    max-width: 100%;
+}
+
+button {
+    color: currentColor;
+}
+
+.container {
+    width: 1440px;
+    padding: 0 30px;
+    background-color: lightgray;
+    margin: 0 auto;
+
+    outline: 3px solid red;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* =========== SIDEBAR =========== */
+.side-bar {
+    display: flex;
+    flex-direction: column;
+
+    width: var(--side-bar-width);
+    min-height: 100vh;
+    padding: 24px;
+
+    background-color: lightblue;
+
+    outline: 1px solid blue;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+
+    margin-top: auto;
+
+    border-radius: 4px;
+}
+/* =========== /SIDEBAR =========== */
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - var(--side-bar-width));
+}
+
+/* ========== APPBAR =========== */
+.app-bar {
+    display: flex;
+    align-items: center;
+
+    height: 108px;
+
+    padding: 24px;
+
+    background-color: lightpink;
+
+    outline: 1px solid black;
+}
+
+.page-name {
+    margin-right: auto;
+}
+
+.user-name {
+    margin-right: 24px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+
+    border: 2px solid orange;
+    border-radius: 50%;
+
+    background-color: white;
+}
+/* ========== /APPBAR =========== */
+
+/* =========== CONTENT =========== */
+.content {
+    max-width: 2000px;
+
+    padding: 48px;
+
+    outline: 1px solid white;
+}
+
+.content-text {
+    margin-bottom: 16px;
+}
+/* =========== /CONTENT =========== */

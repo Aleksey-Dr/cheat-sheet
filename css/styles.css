@@ -1,0 +1,110 @@
+/* Клас для header */
+.header {
+  background-color: rgb(158, 149, 149);
+}
+/* Клас для main */
+.main {
+  background-color: rgb(201, 207, 213);
+}
+/* Селектор класу. Застосується до всіх тегів з класом title */
+.title {
+  font-weight: 500;
+  font-family: "Tangerine", cursive;
+}
+.title-two {
+  color: darkgreen;
+}
+.title-three {
+  color: cadetblue;
+}
+/* Селектор класу. Застосується до всіх тегів з класом text */
+.text {
+  color: brown;
+  font-size: 18px;
+}
+/* Селектор класу. Застосується до всіх тегів з класом link */
+.link {
+  color: aqua;
+  text-decoration: none;
+}
+/* Псевдоклас :hover. Активується, коли курсор миші знаходиться в межах елемента */
+.link:hover {
+  color: tomato;
+}
+.link:focus {
+  color: chartreuse;
+}
+.link:active {
+  color: black;
+}
+.link:visited {
+  color: antiquewhite;
+}
+/*Застосується тільки до посилань, які лежать всередині тегу
+з класом main-links */
+.main-links a {
+  color: blue;
+  text-decoration: none;
+}
+.steps > li {
+  border: 1px solid tomato;
+}
+a[lang="en"] {
+  color: deeppink;
+}
+/* Контролює товщину накреслення (жирність, вага) літер шрифту */
+.font-weight {
+  font-weight: 900;
+}
+.font-style {
+  font-style: italic;
+}
+/* Управляє стилем першого символу в тексті елемента, до якого додається */
+p::first-letter {
+  font-family: "Tahoma", serif;
+  font-size: 32px;
+  color: #f446;
+}
+/* Геометрія елемента */
+/* Однакові поля по 20px з усіх сторін */
+.paddington {
+  padding: 20px;
+}
+
+/* Поля зверху і знизу по 10px, зліва і справа по 20px */
+.paddington-two {
+  padding: 10px 20px;
+}
+/* Поле зверху 10px, зліва і справа по 20px, знизу 5px */
+.paddington-three {
+  padding: 10px 20px 5px;
+}
+/* Поле зверху 10px, справа 15px, знизу 20px, зліва 25px */
+.paddington-four {
+  padding: 10px 15px 20px 25px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.paddington-five {
+  /* Setting the margin between the border and the element's content */
+  padding: 20px;
+
+  background-color: #fff;
+  border: 2px dashed #2a2a2a;
+}
+
+/* 01.11.2022 */
+.box::before {
+  content: 'Це текст в ::before';
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  content: 'Це текст в ::after';
+  font-size: 30px;
+  color: teal;
+}
