@@ -3,35 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SideBar</title>
+    <title>Adaptive SideBar</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/pages/side-bar.css" />
+    <link rel="stylesheet" href="./css/pages/side-bar-adaptive.css" />
 </head>
-    <body>
-        <header></header>
+<body>
+    <header></header>
         <main>
             <div class="container">
                 <div class="wrapper">
-                    <div class="side-bar">
-                        <a href="#">Logotype</a>
-                        <ul>
-                            <li>
-                                <a href="#">Page 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 3</a>
-                            </li>
-                        </ul>
-                        <button class="btn" type="button">Logout</button>
+                    <div class="test js-menu-container" id="mobile-menu">
+                        <div class="side-bar">
+                            <div class="side-bar-head">
+                                <a class="logo" href="./side-bar-adaptive.html">Logotype</a>
+                                <button
+                                    class="side-bar-btn-close js-close-menu"
+                                    type="button"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                            <ul class="side-bar-list-pages list">
+                                <li class="side-bar-list-item">
+                                    <a href="#">Page 1</a>
+                                </li>
+                                <li class="side-bar-list-item">
+                                    <a href="#">Page 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 3</a>
+                                </li>
+                            </ul>
+                            <button class="btn" type="button">Logout</button>
+                        </div>
                     </div>
                     <div class="right-side">
                         <div class="app-bar">
+                            <button
+                                class="side-bar-btn-open js-open-menu"
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="mobile-menu"
+                            >
+                                Open
+                            </button>
                             <h1 class="page-name">Page name</h1>
                             <h2 class="user-name">User name</h2>
                             <div class="avatar"></div>
@@ -44,13 +62,12 @@
                             <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequatur sapiente possimus corporis, hic aspernatur qui, dolorem aut excepturi, sequi delectus odio cupiditate nam consectetur explicabo recusandae! Eum excepturi minima unde distinctio pariatur debitis ad numquam magnam nulla aliquid. Perferendis et quaerat repellat placeat aperiam nulla dolores accusantium cum eaque?</p>
                             <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequatur sapiente possimus corporis, hic aspernatur qui, dolorem aut excepturi, sequi delectus odio cupiditate nam consectetur explicabo recusandae! Eum excepturi minima unde distinctio pariatur debitis ad numquam magnam nulla aliquid. Perferendis et quaerat repellat placeat aperiam nulla dolores accusantium cum eaque?</p>
                             <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequatur sapiente possimus corporis, hic aspernatur qui, dolorem aut excepturi, sequi delectus odio cupiditate nam consectetur explicabo recusandae! Eum excepturi minima unde distinctio pariatur debitis ad numquam magnam nulla aliquid. Perferendis et quaerat repellat placeat aperiam nulla dolores accusantium cum eaque?</p>
-                            <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequatur sapiente possimus corporis, hic aspernatur qui, dolorem aut excepturi, sequi delectus odio cupiditate nam consectetur explicabo recusandae! Eum excepturi minima unde distinctio pariatur debitis ad numquam magnam nulla aliquid. Perferendis et quaerat repellat placeat aperiam nulla dolores accusantium cum eaque?</p>
-                            <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta consequatur sapiente possimus corporis, hic aspernatur qui, dolorem aut excepturi, sequi delectus odio cupiditate nam consectetur explicabo recusandae! Eum excepturi minima unde distinctio pariatur debitis ad numquam magnam nulla aliquid. Perferendis et quaerat repellat placeat aperiam nulla dolores accusantium cum eaque?</p>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
         <footer></footer>
-    </body>
+        <script src="./js/mobile-menu.js"></script>
+</body>
 </html>
