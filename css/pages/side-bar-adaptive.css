@@ -56,6 +56,8 @@ button {
 
 /* =========== SIDEBAR =========== */
 .side-bar {
+    position: relative;
+
     display: flex;
     flex-direction: column;
 
@@ -132,7 +134,7 @@ button {
     min-height: 100vh;
 }
 /* Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1140px) {
     .right-side {
         width: calc(100% - var(--side-bar-width));
     }
@@ -218,7 +220,7 @@ button {
 }
 /* =========== /CONTENT =========== */
 
-/* =========== CONTAINER MOBILE MENU =========== */
+/* =========== CONTAINER MOBILE + TABLET SIDE-BAR =========== */
 /* Mobile + Tablet */
 @media screen and (max-width: 1139px) {
     .test {
@@ -243,9 +245,7 @@ button {
 /* Desktop */
 @media screen and (min-width: 1140px) {
     .test {
-        position: static;
-
         width: 300px;
     }
 }
-/* =========== /CONTAINER MOBILE MENU =========== */
+/* =========== /CONTAINER MOBILE + TABLET SIDE-BAR =========== */
