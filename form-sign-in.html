@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/pages/form-sign-in.css" />
+</head>
+<body>
+    <div class="form-wrapper">
+        <form name="sign-in" autocomplete="off" class="form">
+            <h2 class="form-title">Sign In</h2>
+            <div class="form-label-wrapper">
+                <input
+                    type="email"
+                    name="email"
+                    required
+                    id="email"
+                    placeholder=" "
+                    class="form-input"
+                >
+                <label for="email" class="form-label">Email</label>
+            </div>
+            <div class="form-label-wrapper">   
+                <input
+                    type="password"
+                    name="password"
+                    required
+                    id="password"
+                    placeholder=" "
+                    class="form-input"
+                >
+                <label for="password" class="form-label">Password</label>
+            </div>
+            <button type="submit" class="form-button">Sign In</button>
+        </form>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./js/sign-in-form.js" type="module"></script>
+</body>
+</html>

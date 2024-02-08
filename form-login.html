@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/pages/forms/form-login.css" />
+</head>
+<body>
+    <div class="form-wrapper">
+        <form name="login" autocomplete="off" class="form">
+            <h2 class="form__title">Login</h2>
+            <div class="form__fields-wrapper">
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder=" "
+                    class="form__input"
+                >
+                <label for="username" class="form__label">Username</label>
+            </div>
+            <div class="form__fields-wrapper">
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder=" "
+                    class="form__input"
+                >
+                <label for="password" class="form__label">Password</label>
+            </div>
+            <button
+                type="submit"
+                class="form__button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
